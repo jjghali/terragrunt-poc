@@ -1,0 +1,11 @@
+{
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform"
+  },
+  "[hcl]": {
+    "editor.defaultFormatter": "hashicorp.terraform"
+  },
+  "files.associations": {
+    "*.hcl": "terragrunt"
+  }
+}
