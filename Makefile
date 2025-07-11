@@ -6,3 +6,9 @@ destroy-all:
 
 plan-all:
 	@terragrunt run --all plan
+
+format:
+	@terragrunt run --all fmt
+lint:
+	@terragrunt run --all validate
+	

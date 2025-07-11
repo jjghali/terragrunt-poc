@@ -8,5 +8,7 @@ terraform {
 }
 
 provider "argocd" {
-  # Configuration options
+  server_addr = "argo.example.com"
+  username    = "admin"
+  password    = "password"
 }

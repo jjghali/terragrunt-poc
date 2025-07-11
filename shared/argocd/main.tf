@@ -9,9 +9,14 @@ variable "namespace" {
   default     = "argocd"
 }
 
+variable "env" {
+  description = "Environment for the ArgoCD project"
+  type        = string
+}
+
 resource "argocd_project" "this" {
   metadata {
-    name      = var.project_name
+    name      = "${var.project_name}-${var.env}"
     namespace = var.namespace
     labels = {
       acceptance = "true"
